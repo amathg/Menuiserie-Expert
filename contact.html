@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Menuiserie Expert</title>
+<meta name="description" content="Contactez-moi pour un devis gratuit : téléphone, email ou formulaire de contact en ligne.">
+<link rel="icon" type="image/png" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/favicon-192.png">
+<meta property="og:title" content="Contact | Menuiserie Expert">
+<meta property="og:image" content="images/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/favicon-192.png" alt="Logo Menuiserie Expert">
+      <span class="brand-name">Menuiserie Expert<span>Artisan menuisier — 20 ans d'expérience</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Accueil</a></li>
+      <li><a href="services.html" data-page="services.html">Services</a></li>
+      <li><a href="galerie.html" data-page="galerie.html">Galerie</a></li>
+      <li><a href="a-propos.html" data-page="a-propos.html">À propos</a></li>
+      <li><a href="faq.html" data-page="faq.html">FAQ</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="tel:+33784647925" class="btn btn-primary">📞 07 84 64 79 25</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero hero-page" style="background-image:linear-gradient(0deg, rgba(14,9,6,.55), rgba(14,9,6,.35)), url('images/hero-contact.jpg');">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Contact</div>
+    <h1>Contactez-moi</h1>
+    <p class="lead">Un projet, une question, une demande de devis ? Écrivez-moi ou appelez directement.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="two-col" style="align-items:flex-start;">
+
+      <div class="card" style="padding:36px;">
+        <h2 style="margin-bottom:6px;">Demande de devis gratuit</h2>
+        <p style="color:var(--text-muted);margin-bottom:24px;">Remplissez le formulaire, je vous réponds sous 24 à 48h.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom complet <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone <span class="req">*</span></label>
+              <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="service">Type de projet</label>
+              <select id="service" name="service">
+                <option value="Fabrication sur mesure">Fabrication sur mesure</option>
+                <option value="Portes, fenêtres & placards">Portes, fenêtres & placards</option>
+                <option value="Rénovation & réaménagement">Rénovation & réaménagement</option>
+                <option value="Parquet, escaliers & terrasses">Parquet, escaliers & terrasses</option>
+                <option value="Cuisine / dressing">Cuisine / dressing</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Votre message <span class="req">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet : type de travaux, surface, délai souhaité..."></textarea>
+            </div>
+          </div>
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis — site Menuiserie Expert">
+          <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
+          <p id="form-status" class="form-status"></p>
+          <p class="form-note">En envoyant ce formulaire, vous acceptez d'être recontacté(e) au sujet de votre demande. Aucune donnée n'est transmise à des tiers.</p>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="3"></rect><path d="M9 6h6"></path><path d="M9 18h6"></path></svg></div>
+            <div>
+              <h4>Téléphone</h4>
+              <p><a href="tel:+33784647925">07 84 64 79 25</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 6l10 7 10-7"></path></svg></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:djibyteck@gmail.com">djibyteck@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div>
+            <div>
+              <h4>Disponibilité</h4>
+              <p>7j/7 — Réponse sous 24 à 48h</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C0.7 8.9 2.4 5 6 5c2 0 3.5 1.2 4 2.5C10.5 6.2 12 5 14 5c3.6 0 5.3 3.9 3.5 7.5C19 16.65 12 21 12 21z"></path></svg></div>
+            <div>
+              <h4>Devis</h4>
+              <p>Gratuit, détaillé et sans engagement</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="zone-box" style="margin-top:32px;">
+          <h3>Zone d'intervention</h3>
+          <p>J'interviens pour tous vos projets de menuiserie à domicile. Indiquez-moi votre secteur dans le formulaire ou par téléphone pour confirmer rapidement ma disponibilité.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="images/favicon-192.png" alt="Logo"><strong style="color:var(--cream)">Menuiserie Expert</strong></div>
+        <p>Artisan menuisier qualifié, plus de 20 ans d'expérience. Fabrication et pose sur mesure, rénovation et réaménagement pour particuliers.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="services.html">Menuiserie sur mesure</a></li>
+          <li><a href="services.html">Rénovation</a></li>
+          <li><a href="services.html">Portes & fenêtres</a></li>
+          <li><a href="services.html">Cuisines & dressings</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33784647925">07 84 64 79 25</a></li>
+          <li><a href="mailto:djibyteck@gmail.com">djibyteck@gmail.com</a></li>
+          <li>Intervention à domicile</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="current-year"></span> Menuiserie Expert — Tous droits réservés · <a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+33784647925" style="background:var(--amber);color:var(--dark);font-weight:600;">📞 Appeler</a>
+  <a href="mailto:djibyteck@gmail.com" style="border:2px solid var(--amber);color:var(--amber-lt);font-weight:600;">✉️ Email</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
